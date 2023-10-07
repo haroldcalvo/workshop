@@ -1,0 +1,23 @@
+#Profile-box img{
+   width: 75%;
+height: 100%;
+
+}
+.Profile-container{
+    display: flex;
+}
+#Profile-box{
+    width: 20%;
+}
+#About-self{
+    width: 80%;
+}
+h3{
+    text-align: center;
+}
+#First-column, #Second-column{
+
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+}
