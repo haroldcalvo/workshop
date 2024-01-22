@@ -1,21 +1,78 @@
-#Profile-box {
-  width: 150px; /* Set a fixed width for the container */
-  height: 150px; /* Set a fixed height for the container */
-  border-radius: 50%;
-  overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-#Profile-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the entire image is visible and maintains its aspect ratio */
+.NavContainer {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  margin: 0;
 }
-body {
-  font-family: 'Courier Prime';;
+
+.NavContainer nav {
+  display: flex;
 }
+
+.buttonAdj {
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.buttonAdj:hover {
+  transform: scale(1.1);
+  background-color: olivedrab;
+  color: white;
+}
+
+.Navadj {
+  margin: 10px;
+}
+
+.All-content {
+  /* Add styles for the main content container if needed */
+}
+
+.sectionParent {
+  /* Add styles for the section parent container if needed */
+}
+
 section {
-  height: 300px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  /* Add common styles for all sections if needed */
+}
+
+#Introduction {
+  /* Add specific styles for the Introduction section if needed */
+}
+
+.Profile-container {
+  /* Add styles for the Profile container if needed */
+}
+
+#About-self {
+  /* Add styles for the About-self container if needed */
+}
+
+#Profile-box {
+  /* Add styles for the Profile-box container if needed */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .buttonAdj {
+    margin: 0 10px; /* Adjust margin for smaller screens */
+    padding: 9px 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust other styles for smaller screens */
+}
+
+@media (min-width: 769px) {
+  /* Styles for laptop/desktop view */
+  .buttonAdj {
+    margin: 0 30px;
+    padding: 9px 30px;
+  }
 }
