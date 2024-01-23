@@ -7,8 +7,9 @@ body {
 .NavContainer {
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.234);
   margin: 0;
+  
 }
 
 .NavContainer nav {
@@ -26,12 +27,21 @@ body {
   transform: scale(1.1);
   background-color: #8D7361;
   color: white;
+  
 }
 
 .Navadj {
   margin: 10px;
 }
 
+.TextMe{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 134px;
+  letter-spacing: 2px;
+}
+#About-self {
+  text-align: center;
+}
 .All-content {
   /* Add styles for the main content container if needed */
 }
@@ -39,7 +49,6 @@ body {
 .sectionParent {
   width: 100%;
   height: 100vh;
-  display: flex;
   font-size: 2em;
 }
 
@@ -55,9 +64,7 @@ section {
   /* Add styles for the Profile container if needed */
 }
 
-#About-self {
-  /* Add styles for the About-self container if needed */
-}
+
 
 #Profile-box {
   /* Add styles for the Profile-box container if needed */
@@ -78,5 +85,6 @@ section {
   .buttonAdj {
     margin: 0 30px;
     padding: 9px 30px;
+    font-size: 12px;
   }
 }
