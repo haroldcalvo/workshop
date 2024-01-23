@@ -7,10 +7,15 @@ body {
 .NavContainer {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.234);
+  /* background-color: rgb(41 9 9 / 91%); */
   margin: 0;
   
+  margin-left: 80px;
+  margin-right: 80px;
+  border-bottom: solid black 2px;
 }
+
+
 
 .NavContainer nav {
   display: flex;
@@ -25,8 +30,8 @@ body {
 
 .buttonAdj:hover {
   transform: scale(1.1);
-  background-color: #8D7361;
-  color: white;
+  background-color: #f8ffb4;
+  color: rgb(123, 51, 18);
   
 }
 
@@ -86,5 +91,7 @@ section {
     margin: 0 30px;
     padding: 9px 30px;
     font-size: 12px;
+    background-color: #8D7361;
+  color: white;
   }
 }
