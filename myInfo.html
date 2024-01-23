@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Practice</title>
     <link rel="stylesheet" href="css/myinfo.css">
 </head>
 <body>
     <div class="NavContainer">
     <nav class="Navadj">
-      <button class="buttonAdj">Home</button>
-      <button class="buttonAdj">Intoduction</button>
-      <button class="buttonAdj">Skills</button>
-      <button class="buttonAdj">Background</button>
+      <button class="buttonAdj" data-target="#Home">Home</button>
+      <button class="buttonAdj" data-target="#Introduction">Introduction</button>
+      <button class="buttonAdj" data-target="#Background">Background</button>
+      <button class="buttonAdj" data-target="#Skills">Skills</button>
+      <button class="buttonAdj" data-target="#Contacts">Contacts</button>
     </nav>
     </div>
     
@@ -27,7 +28,7 @@
     </section>
       <main class="All-content">
         <div class="sectionParent">
-        <section id="Introduction">
+        <section id="Home">
           <h3>Home</h3>
           <div class="Profile-container">
               <div id="About-self">
@@ -41,6 +42,7 @@
           </div>
         </section>
         </div>
+        <div class="sectionParent">
         <section id="Introduction">
             <h3>Introduction</h3>
             <div class="Profile-container">
@@ -54,29 +56,47 @@
                 </div>
             </div>
         </section>
-    </main>
-        <section id="Skills">
-            <h3>SKILLS</h3>
-            <div class="Skills-container">
-                <div>Graphic & Design</div>
-                <div>Front End Web developer</div>
-            </div>
-        </section>
-
-        <section id="Projects">
-            <h3>Projects</h3>
-            <div class="Project-container">
-                <div>Website</div>
-                <div>Questionnare Application</div>
-            </div>
-        </section>
-
-        <section id="Contacts"> 
+        </div>
+        <div class="sectionParent">
+          <section id="Introduction">
+              <h3>Background</h3>
+              <div class="Profile-container">
+                  <div id="About-self">
+                      <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorum nulla velit architecto nostrum totam, explicabo iste quidem aut nam ullam tempore consequuntur quae consectetur earum, necessitatibus voluptas doloribus sit?
+                      </p>
+                  </div>
+                  <div id="Profile-box">
+                      <img src="img/One.jp" alt="Profile">
+                  </div>
+              </div>
+          </section>
+          </div>
+        <div class="sectionParent">
+            <section id="Skills">
+                <h3>SKILLS</h3>
+                <div class="Skills-container">
+                    <div>Graphic & Design</div>
+                    <div>Front End Web developer</div>
+                </div>
+            </section>
+        </div>
+        <div class="sectionParent">
+            <section id="Projects">
+                <h3>Projects</h3>
+                <div class="Project-container">
+                  <div>Website</div>
+                  <div>Questionnare Application</div>
+                </div>
+            </section>
+        </div>
+        <div class="sectionParent">
+          <section id="Contacts"> 
             <h3>Contacts</h3>
             <div class="Contacts-container">
                 <div id="First-column">
                     <a href="#Email">
-                      <img src="icons/archin.svg" alt=""> Email</a>
+                      <img src="" alt=""> Email</a>
                     <br>   
                     <a href="#Mobile-Number">Mobile-Number</a>
                     <br>
@@ -93,6 +113,12 @@
                 
             </div>
         </section>
+        </div>
+    </main>
+        
+        
+
+        
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="../workshop/js/function.js"></script>
 </body>

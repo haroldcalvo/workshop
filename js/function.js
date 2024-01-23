@@ -1,16 +1,17 @@
-function Artworks(){
-    document.querySelector('#Skills').classList.toggle('ChangeArtworks');
-}
-$('.scroll-link').on('click', function(e) {
-    e.preventDefault(); // Prevent the default behavior of the anchor link
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.buttonAdj');
 
-    var target = $(this).data('target'); // Get the target section from the data-target attribute
-    var $targetSection = $('#' + target);
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var targetId = button.getAttribute('data-target');
+            var targetElement = document.getElementById(targetId);
 
-    if ($targetSection.length) {
-        // Scroll to the section smoothly using scrollIntoView
-        $targetSection[0].scrollIntoView({
-            behavior: 'smooth'
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
         });
-    }
+    });
 });
