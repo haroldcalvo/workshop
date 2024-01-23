@@ -1,17 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var buttons = document.querySelectorAll('.buttonAdj');
+$(document).ready(function() {
+    $('.buttonAdj').on('click', function() {
+        var targetId = $(this).data('target');
+        var targetElement = $(targetId);
 
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            var targetId = button.getAttribute('data-target');
-            var targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
+        if (targetElement.length) {
+            $('html, body').animate({
+                scrollTop: targetElement.offset().top
+            }, 800);
+        }
     });
 });
