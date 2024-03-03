@@ -1,0 +1,39 @@
+.imgContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imgSrc {
+  position: relative;
+  width: 150px; /* Adjust width and height to desired circle size */
+  height: 150px;
+  background-image: url('../img/harold.jpg');
+  background-size: cover; /* Ensure the entire image covers the circle */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%; /* Make it a circle */
+  transition: opacity 0.3s ease;
+}
+
+.mainContent {
+  padding-top: 10px !important;
+  background-color: #666666ff;
+}
+
+.buttonNav {
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for background-color and color */
+}
+
+.buttonNav:hover {
+  border: 1px solid rgb(243, 170, 60);
+  color: yellow;
+  background-color: black;
+}
+
+.buttonNav:active {
+  background-color: rgb(202, 192, 95); /* Change background color when button is clicked */
+}
