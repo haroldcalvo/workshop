@@ -11,7 +11,7 @@
 }
 
 .buttonCLass:hover {
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid rgb(255, 255, 255);
   transform: scale(1.1); /* Increase the size of the container on hover */
 }
 
@@ -38,13 +38,14 @@ main{
   background-color: transparent;
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .navigation{
   align-items: center;
   align-content: center;
   text-align: center;
+  position: relative;
 }
 #introductionBack{
   background-color: black;
@@ -55,10 +56,17 @@ main{
   padding: 10px;
 }
 #imgBackground {
-  margin-top: 20px;
+  margin-top: 60px;
   background-image: url('../img/harold-red.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 30vw;
+  background-position: center;
   position: sticky;
+}
+.navIdentity
+{
+position: sticky;
+}
+.textInfo{
 }
