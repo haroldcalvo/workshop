@@ -46,10 +46,10 @@ header {
   z-index: 1000;
 }
 
-.frontPage {
-  padding-top: 350px;
-  padding-left: 445px !important;
-}
+  .frontPage {
+    padding-top: 350px;
+    padding-left: 445px !important;
+  }
 @keyframes animateIn {
   0% {
     opacity: 0;
@@ -147,3 +147,110 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+/* Small devices (portrait phones) */
+@media (max-width: 575.98px) {
+  nav.navContainer ul li a {
+    font-size: 10px !important;
+  }
+
+  .frontPage {
+    font-size: 31px !important;
+    padding-top: 295px;
+    padding-left: 21px !important;
+  }
+  #adjustCv{
+    margin-left: 12px !important;
+    width: 72% !important;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #ImgContainer {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #ImgContainer {
+    background-size: cover;
+    background-position: center;
+  }
+  .frontPage {
+    font-size: 29px !important;
+    padding-top: 200px;
+    padding-left: 268px !important;
+  }
+  #adjustCv {
+      margin-left: 12px !important;
+      width: 32% !important;
+      margin-bottom: 13px;
+  }
+  #adjustAR{
+    width: 90% !important;
+  }
+  .Cv-Accomplishment{
+    font-size: 15px !important;
+  }
+  nav.navContainer ul li a {
+    font-size: 15px !important;
+  }
+  #responsiveIntroduction{
+    padding-top: 100px !important;
+  }
+  #reponsiveAchivements{
+    padding-top: 50px !important;
+  }
+  #DAS{
+    padding-top: 200px !important;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #ImgContainer {
+    background-size: cover;
+    background-position: center;
+  }
+  .frontPage {
+    font-size: 32px !important;
+    padding-top: 200px;
+    padding-left: 368px !important;
+  }
+  #adjustCv {
+    margin-left: 12px !important;
+    width: 30% !important;
+    text-align: center;
+  }
+  .Cv-Accomplishment{
+    font-size: 15px !important;
+  }
+  #DAS{
+    padding-top: 60px !important;
+  }
+  #responsiveIntroduction{
+    padding-top: 100px !important;
+  }
+  #reponsiveSkills{
+    padding-top:180px !important;
+  }
+  nav.navContainer ul li a {
+    font-size: 14px !important;
+  }
+}
+
+/* Extra extra large devices (extra large desktops) */
+@media (min-width: 1200px) {
+  .frontPage {
+    font-size: 31px !important;
+    padding-top: 295px;
+    padding-left: 490px !important;
+  }
+  #adjustCv {
+    margin-left: 12px !important;
+    width: 27% !important;
+    text-align: center;
+}
+}
