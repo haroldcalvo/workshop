@@ -1,3 +1,24 @@
+$(document).ready(function() {
+  $('#adjustAR').click(function(event) {
+    event.preventDefault();
+    var link = $('<a>', {
+        href: '../workshop/img/Calvo-Accomplishment-Report.docx',
+        download: 'Calvo-Accomplishment-Report.docx'
+    }).appendTo('body');
+    link[0].click();
+    link.remove();
+});
+
+  $('#adjustCv').click(function(event) {
+      event.preventDefault();
+      var link = $('<a>', {
+          href: '../workshop/img/CalvoHarold-A.-Resume.pdf',
+          download: 'Your-CV.docx'
+      }).appendTo('body');
+      link[0].click();
+      link.remove();
+  });
+});
 window.addEventListener('scroll', function() {
   var elements = document.querySelectorAll('.description');
   elements.forEach(function(element) {
@@ -23,3 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+

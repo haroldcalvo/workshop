@@ -146,6 +146,16 @@ ul li a:hover {
 #accomplishment-report-link:hover {
   text-decoration: underline;
 }
+#adjustCv, #adjustAR {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#adjustCv:hover, #adjustAR:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 359.98px) {
   #ImgContainer {
     background-image: url('../img/Background\(360\ x\ 576\ px\).svg') !important;
