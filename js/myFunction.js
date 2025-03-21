@@ -2,8 +2,8 @@ $(document).ready(function() {
   $('#adjustAR').click(function(event) {
     event.preventDefault();
     var link = $('<a>', {
-        href: '../workshop/img/Calvo-Accomplishment-Report.docx',
-        download: 'Calvo-Accomplishment-Report.docx'
+        href: '../workshop/img/Calvo-Accomplishment-Report.pdf',
+        download: 'Calvo-Accomplishment-Report.pdf'
     }).appendTo('body');
     link[0].click();
     link.remove();
@@ -12,8 +12,8 @@ $(document).ready(function() {
   $('#adjustCv').click(function(event) {
       event.preventDefault();
       var link = $('<a>', {
-          href: '../workshop/img/CalvoHarold-A.-Resume.pdf',
-          download: 'Your-CV.docx'
+          href: '../workshop/img/harold_calvo_reusme_2025.pdf',
+          download: 'workshop/img/harold_calvo_reusme_2025.pdf'
       }).appendTo('body');
       link[0].click();
       link.remove();
